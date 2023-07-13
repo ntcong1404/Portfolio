@@ -16,6 +16,7 @@ import tailwind from "./tech/tailwind.png";
 import SQL from "./tech/SQL.png";
 import Cpp from "./tech/cpp.png";
 
+import noexp from "./company/noexp.png";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -43,6 +44,7 @@ export {
   tailwind,
   SQL,
   Cpp,
+  noexp,
   meta,
   shopify,
   starbucks,
