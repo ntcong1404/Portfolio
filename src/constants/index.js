@@ -147,7 +147,7 @@ const projects = [
     ],
     image: jobit,
     source_code_link: "https://github.com/ntcong1404/Portfolio",
-    link_demo: "https://vebo-tv.vercel.app/",
+    link_demo: "https://portfolio-ntcong1404.vercel.app/",
   },
 ];
 
