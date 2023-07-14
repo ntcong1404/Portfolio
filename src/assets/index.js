@@ -14,7 +14,7 @@ import javascript from "./tech/javascript.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import SQL from "./tech/SQL.png";
-import Cpp from "./tech/cpp.png";
+import Cpp from "./tech/Cpp.png";
 
 import noexp from "./company/noexp.png";
 import meta from "./company/meta.png";
