@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useRef } from "react";
 import { BrowserRouter } from "react-router-dom";
 import {
@@ -15,6 +16,8 @@ function App() {
   const scrollToRef = useRef();
 
   const handleOnScroll = () => {
+    console.log(window.scrollY);
+    console.log(scrollToRef);
     scrollToRef.current.scrollIntoView();
   };
 
@@ -34,30 +37,35 @@ function App() {
         <Works />
         <Contact />
         <StarsCanvas />
-        <button
-          type="button"
-          data-te-ripple-init
-          data-te-ripple-color="light"
-          class="fixed bottom-5 right-5 inline-block rounded-full bg-danger p-2 uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#dc4c64] transition duration-150 ease-in-out hover:bg-danger-600 hover:scale-125 hover:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.3),0_4px_18px_0_rgba(220,76,100,0.2)] focus:bg-danger-600 focus:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.3),0_4px_18px_0_rgba(220,76,100,0.2)] focus:outline-none focus:ring-0 active:bg-danger-700 active:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.3),0_4px_18px_0_rgba(220,76,100,0.2)]"
+        <div
           onClick={handleOnScroll}
+          className="fixed bottom-5 right-5 hover:cursor-pointer "
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            stroke-width="2.5"
-            stroke="currentColor"
-            class="h-4 w-4"
-          >
-            <path
-              fill-rule="evenodd"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </button>
+          <div className="w-[26px] h-[40px] rounded-3xl border-2 border-secondary flex justify-center items-start p-1 hover:border-cyan-300 hover:scale-110">
+            <motion.svg
+              animate={{ y: [-2, 6, -2] }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              strokeWidth="2.5"
+              stroke="currentColor"
+              className="h-4 w-4 "
+            >
+              <path
+                fillRule="evenodd"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75"
+                clipRule="evenodd"
+              />
+            </motion.svg>
+          </div>
+        </div>
       </div>
     </BrowserRouter>
   );
