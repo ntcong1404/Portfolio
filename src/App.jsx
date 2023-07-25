@@ -16,8 +16,6 @@ function App() {
   const scrollToRef = useRef();
 
   const handleOnScroll = () => {
-    console.log(window.scrollY);
-    console.log(scrollToRef);
     scrollToRef.current.scrollIntoView();
   };
 

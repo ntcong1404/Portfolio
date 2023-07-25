@@ -5,6 +5,7 @@ import {
   html,
   css,
   reactjs,
+  nodejs,
   SQL,
   Cpp,
   tailwind,
@@ -12,6 +13,7 @@ import {
   noexp,
   jobit,
   vebo,
+  blog,
 } from "../assets";
 
 export const navLinks = [
@@ -57,6 +59,10 @@ const technologies = [
   {
     name: "React JS",
     icon: reactjs,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
   },
   {
     name: "SQL",
@@ -126,6 +132,35 @@ const projects = [
     image: vebo,
     source_code_link: "https://github.com/ntcong1404/VeboTV-",
     link_demo: "https://vebo-tv.vercel.app/",
+  },
+  {
+    name: "Blog",
+    description: "I wrote a blog website basic ( CRUD ).",
+    tags: [
+      {
+        name: "node",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "material-ui",
+        color: "red-text-gradient",
+      },
+    ],
+    image: blog,
+    source_code_link: "https://github.com/ntcong1404/mern",
+    link_demo: "https://mern-ntcog.vercel.app/",
   },
   {
     name: "Portfolio",
