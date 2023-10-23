@@ -14,6 +14,8 @@ import {
   jobit,
   vebo,
   blog,
+  micog,
+  weddingInvitation,
 } from "../assets";
 
 export const navLinks = [
@@ -132,6 +134,46 @@ const projects = [
     image: vebo,
     source_code_link: "https://github.com/ntcong1404/VeboTV-",
     link_demo: "https://vebo-tv.vercel.app/",
+  },
+  {
+    name: "Website movies MICOG",
+    description:
+      "MIcog is a movie website that allows users to search for movies by title, sort them by genre, view trending, upcoming movies, and add movies to your favorites list",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: micog,
+    source_code_link: "https://github.com/ntcong1404/micog-movies",
+    link_demo: "https://micog.vercel.app/",
+  },
+  {
+    name: "Website Invitation - MICOG",
+    description:
+      "Website Invitation - MICOG is an online wedding invitation that includes information and images related to the wedding",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: weddingInvitation,
+    source_code_link: "https://github.com/ntcong1404/wedding-invitation",
+    link_demo: "https://wedding-invitation-blush-seven.vercel.app/",
   },
   {
     name: "Blog",

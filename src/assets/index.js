@@ -28,6 +28,8 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import vebo from "./vebo.png";
 import blog from "./blog-app-mern.png";
+import micog from "./micog.png";
+import weddingInvitation from "./weddingInvitation.png";
 
 export {
   logo,
@@ -57,4 +59,6 @@ export {
   tripguide,
   vebo,
   blog,
+  micog,
+  weddingInvitation,
 };
